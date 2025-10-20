@@ -1,37 +1,35 @@
-import { AnimatePresence, Variants, motion } from "framer-motion";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { useTheme } from "next-themes";
 
 export default function AnimatedLogo() {
-  const iconVariant: Variants = {
-    hidden: {
-      pathLength: 0,
-      fill: "rgba(0, 0, 0, 0)",
-    },
-    visible: {
-      pathLength: 1,
-      // Set fill as per your theme
-      fill: "#1f8d93",
-    },
-  };
+  const { theme } = useTheme();
 
   return (
-    <AnimatePresence>
-      <motion.svg
-        viewBox="0 0 450 450"
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-full w-full fill-accent stroke-accent"
-      >
-        <motion.path
-          d="M321.955 420L179.465 127.143L224.998 36.1755L416.91 420H321.955ZM204.867 263.253L128.055 420H33.0897L158.769 168.608L204.867 263.253Z"
-          strokeWidth="15"
-          variants={iconVariant}
-          initial="hidden"
-          animate="visible"
-          transition={{
-            default: { duration: 3, ease: "easeInOut" },
-            fill: { duration: 3, ease: [1, 0, 0.8, 1] },
-          }}
-        />
-      </motion.svg>
-    </AnimatePresence>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      whileHover={{
+        scale: 1.1,
+        transition: { duration: 0.3 },
+      }}
+      className="h-full w-full"
+      style={{
+        filter:
+          theme === "dark"
+            ? "brightness(0) saturate(100%) invert(95%) sepia(12%) saturate(285%) hue-rotate(347deg) brightness(98%) contrast(94%)" // Light beige #EBE7DD
+            : "brightness(0) saturate(100%) invert(42%) sepia(8%) saturate(831%) hue-rotate(4deg) brightness(93%) contrast(88%)", // Dark beige for light mode
+      }}
+    >
+      <Image
+        src="/EJ.ico"
+        alt="Logo"
+        width={56}
+        height={56}
+        className="h-full w-full object-contain"
+        priority
+      />
+    </motion.div>
   );
 }

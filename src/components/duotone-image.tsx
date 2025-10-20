@@ -16,8 +16,8 @@ const DuotoneImage: React.FC<DuotoneImageProps> = ({
   height,
   className = "",
   alt = "",
-  lightColor = "#E0FFFF",
-  darkColor = "#004D4D",
+  lightColor = "#E8E3D8",
+  darkColor = "#2A2A2A",
   contrastFactor = 1.2, // Default contrast enhancement
   sharpnessFactor = 0.5, // Default sharpness
   ...props

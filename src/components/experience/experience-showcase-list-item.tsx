@@ -14,7 +14,7 @@ function ShowCaseLiIcon(props: ExperienceListIconProps) {
     layoutEffect: false,
   });
   return (
-    <figure className="absolute left-0 stroke-zinc-900">
+    <figure className="absolute left-0 stroke-accent">
       <svg width="75" height="75" viewBox="0 0 100 100">
         <circle
           cx="50"
@@ -77,9 +77,10 @@ export default function ExperienceShowcaseListItem(
         <span className="text-sm font-medium text-foreground xs:text-base">
           {props.date} | {props.location}
         </span>
-        <p className="text-sm font-medium text-muted-foreground xs:text-base">
-          {props.description}
-        </p>
+        <div
+          className="text-sm font-medium leading-relaxed text-muted-foreground xs:text-base"
+          dangerouslySetInnerHTML={{ __html: props.description }}
+        />
       </motion.div>
     </li>
   );

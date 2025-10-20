@@ -38,4 +38,8 @@ next-env.d.ts
 .vscode
 
 public/sitemap.xml
-public/robots.txt
+public/robots.txtnode_modules
+.next
+out
+.env*
+.DS_Store
