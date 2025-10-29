@@ -38,15 +38,15 @@ export default function LandingHero() {
         <div className="mx-auto max-w-7xl">
           <AnimatePresence>
             <FadeUp key="title-main" duration={0.6}>
-              <h1 className="bg-accent bg-clip-text py-2 text-5xl font-bold text-transparent sm:text-6xl md:text-7xl xl:text-8xl">
+              <h1 className="title-font bg-accent bg-clip-text py-2 text-4xl text-transparent sm:text-5xl md:text-6xl xl:text-7xl">
                 Ein Jeong
               </h1>
-              <span className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 md:text-3xl">
-                📍 Pittsburgh, PA
+              <span className="content-font text-xl text-zinc-900 dark:text-zinc-100 md:text-2xl">
+                📍 PITTSBURGH, PA
               </span>
             </FadeUp>
             <FadeUp key="description" duration={0.6} delay={0.2}>
-              <div className="mt-8 max-w-3xl text-base font-semibold text-zinc-900 dark:text-zinc-200 sm:text-base md:text-xl">
+              <div className="content-font mt-8 max-w-3xl text-base text-zinc-900 dark:text-zinc-200 sm:text-base md:text-xl">
                 I&apos;m a student at carnegie mellon university studying{" "}
                 <span className="font-semibold text-accent">CS + Business</span>
                 .<br />I recently worked as a quantitative researcher at{" "}

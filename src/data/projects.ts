@@ -45,55 +45,52 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
 
 export const PROJECTS_CARD: ProjectCardProps[] = [
   {
-    name: "Json tree",
-    favicon: "/images/projects/logos/jsontree.ico",
+    name: "OpenGym",
+    favicon: "/images/projects/logos/opengym.ico",
     imageUrl: [
-      "/images/projects/jsontreeLight.webp",
-      "/images/projects/jsontreeDark.webp",
+      "/images/projects/opengym1.webp",
+      "/images/projects/opengym2.webp",
     ],
     description:
-      "Visualize JSON data format in form of a tree or graph. Application is made using Nextjs, Tailwindcss and Monaco Editor. Design image can be downloaded from this app.",
-    sourceCodeHref: "https://github.com/BUMBAIYA/jsontree",
-    liveWebsiteHref: "https://jsontree.vercel.app",
+      "A real-time gym occupancy tracker for CMU students built with React, Node.js, Express, and MongoDB. Integrates Bluetooth sensors to display live availability across campus facilities.",
+    sourceCodeHref: "https://github.com/cmubtg/open-gym",
+    liveWebsiteHref: "https://cmuopengym.com/",
   },
   {
-    name: "Kanban app",
-    favicon: "/images/projects/logos/kanban.ico",
+    name: "Pomoplanner",
+    favicon: "/images/projects/logos/pomodoro.ico",
     imageUrl: [
-      "/images/projects/kanbanLight.webp",
-      "/images/projects/kanbanDark.webp",
-      "/images/projects/kanbanCardLight.webp",
+      "/images/projects/pomodoro1.webp",
+      "/images/projects/pomodoro2.webp",
+      "/images/projects/pomodoro3.webp",
     ],
     description:
-      "Keep track of projects and tasks in different categories. Drag and drop card from tables. Assign user and priority to task and many more features. This app is made using Reactjs, Typescript, Tailwindcss and React-beautiful-dnd library.",
-    sourceCodeHref: "https://github.com/BUMBAIYA/kanban",
-    liveWebsiteHref: "https://kannban-board.vercel.app",
+      "A full-stack productivity web app that generates personalized study schedules with a Pomodoro timer, AI-assisted task prioritization, and performance tracking dashboards.",
+    sourceCodeHref: "https://github.com/jeongein574/Pomoplanner",
+    liveWebsiteHref: "https://www.youtube.com/watch?v=JWPjaXTCYXY",
   },
   {
-    name: "Many Games",
-    favicon: "/images/projects/logos/manygames.ico",
+    name: "Wordish",
+    favicon: "/images/projects/logos/wordish.ico",
     imageUrl: [
-      "/images/projects/manyGamesDark.webp",
-      "/images/projects/manyGamesLight.webp",
-      "/images/projects/manyGames2048.webp",
-      "/images/projects/manyGamesPuzzle.webp",
-      "/images/projects/manyGamesWordle.webp",
+      "/images/projects/wordish1.webp",
+      "/images/projects/wordish2.webp",
     ],
     description:
-      "Many short and fun games using Reactjs, Typescript and Tailwindcss with collaboration with other developers",
-    sourceCodeHref: "https://github.com/BUMBAIYA/ManyGames",
-    liveWebsiteHref: "https://manygames.vercel.app",
+      "A Django-based web game inspired by Wordle, rebuilt entirely with server-side logic. The app renders each guess through Django views and templates, performing all validation and game processing on the backend without JavaScript. Built to demonstrate MVC architecture, form handling, and stateless design using Python and HTML/CSS.",
+    sourceCodeHref: "https://github.com/jeongein574/Wordish",
   },
   {
     name: "My portfolio",
     favicon: "/EJ.ico",
     imageUrl: [
-      "/images/projects/portfolioDark.webp",
-      "/images/projects/portfolioLight.webp",
+      "/images/projects/portfolio1.webp",
+      "/images/projects/portfolio2.webp",
+      "/images/projects/portfolio3.webp",
     ],
     description:
       "My personal portfolio website made using Nextjs, tailwindcss and framer motion.",
-    sourceCodeHref: "https://github.com/BUMBAIYA/amitchauhan-v2",
+    sourceCodeHref: "https://github.com/jeongein574/portfolio",
     liveWebsiteHref: siteMetadata.siteUrl,
   },
   {

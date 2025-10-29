@@ -19,7 +19,7 @@ export default function About() {
             "Dive into the story of Ein Jeong, a Software Developer. Uncover the experiences, skills, and passion that fuel a commitment to delivering exceptional web solutions.",
           images: [
             {
-              url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
+              url: `${siteMetadata.siteUrl}$`,
               alt: "Ein Jeong - Portfolio Image",
             },
           ],

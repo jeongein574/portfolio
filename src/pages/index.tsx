@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import { NextSeo } from "next-seo";
 
+import VideoIntro from "@/components/video-intro";
 import LandingHero from "@/components/landing-hero";
 import SkillsShowcase from "@/components/skills/skills-showcase";
 import ProjectShowcase from "@/components/projects/project-showcase";
@@ -23,7 +24,7 @@ export default function Home() {
             "Dive into the world of web development with Ein Jeong. Discover a Software Developer with 2 years of expertise, showcasing cutting-edge projects and a commitment to crafting exceptional user interfaces.",
           images: [
             {
-              url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
+              url: `${siteMetadata.siteUrl}`,
               alt: "Ein Jeong - Portfolio Image",
             },
           ],
@@ -49,6 +50,7 @@ export default function Home() {
           />
         )}
       </Head>
+      <VideoIntro />
       <LandingHero />
       <SkillsShowcase skills={SKILLS_DATA} />
       <ProjectShowcase projects={PROJECT_SHOWCASE} />

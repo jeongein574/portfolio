@@ -34,7 +34,7 @@ export default function AboutHero() {
         <div className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2">
           <AnimatePresence>
             <FadeUp key="title-name" duration={0.6}>
-              <h1 className="text-1xl sm:text-1xl md:text-1xl whitespace-nowrap font-bold text-foreground lg:text-2xl xl:text-2xl">
+              <h1 className="title-font whitespace-nowrap text-lg text-foreground sm:text-xl md:text-xl lg:text-xl xl:text-xl">
                 EIN JEONG
               </h1>
             </FadeUp>
@@ -60,9 +60,9 @@ export default function AboutHero() {
       <div className="mt-10 w-full max-w-4xl px-4 text-center">
         <AnimatePresence>
           <FadeUp key="description-1" duration={0.6} delay={0.4}>
-            <p className="mt-4 text-sm font-medium text-foreground sm:text-base md:text-lg lg:text-xl">
-              I’m Ein Jeong, an undergraduate at Carnegie Mellon University
-              studying Business Administration and Computer Science. I’m
+            <p className="content-font mt-4 text-sm text-foreground sm:text-base md:text-lg lg:text-xl">
+              I&apos;m Ein Jeong, an undergraduate at Carnegie Mellon University
+              studying Business Administration and Computer Science. I&apos;m
               passionate about combining data-driven thinking with creativity —
               exploring quantitative analysis and AI systems to build scalable,
               impactful solutions. In my free time, I find inspiration in
@@ -70,7 +70,7 @@ export default function AboutHero() {
             </p>
           </FadeUp>
           <FadeUp key="description-2" duration={0.6} delay={0.6}>
-            <p className="mt-6 text-sm font-medium text-foreground sm:text-base md:text-lg lg:text-xl">
+            <p className="content-font mt-6 text-sm text-foreground sm:text-base md:text-lg lg:text-xl">
               Explore my latest{" "}
               <Link href="/projects" className="underline underline-offset-4">
                 <span className="text-accent">projects</span>
