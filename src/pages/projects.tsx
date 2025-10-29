@@ -18,7 +18,7 @@ export default function Projects() {
             "Explore a showcase of projects crafted by Ein Jeong, a Software Developer. Witness the fusion of creativity and technology in web development.",
           images: [
             {
-              url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
+              url: `${siteMetadata.siteUrl}/images/LinkedIn.jpeg`,
               alt: "Ein Jeong - Portfolio Image",
             },
           ],

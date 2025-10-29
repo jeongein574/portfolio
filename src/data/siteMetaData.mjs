@@ -10,6 +10,7 @@ export const siteMetadata = {
   siteRepo: "https://github.com/jeongein574/portfolio",
   siteLogo: "/EJ.ico",
   image: "/static/homepage.png",
+  linkedInImage: "/images/LinkedIn.jpeg",
   socialBanner: "/static/homepage.png",
   email: "jeongein574@gmail.com",
   github: "https://github.com/jeongein574",
